@@ -36,10 +36,10 @@ into the {body} of the default.hbs template --}}
         {{/post}}
         <div class="post-feed">
             {{#featured}}
-                {{#each posts}}
+                {{#foreach posts}}
                     {{!-- The tag below includes the markup for each featured post - partials/post-card.hbs --}}
                     {{> "post-card"}}
-                {{/each}}
+                {{/foreach}}
             {{/featured}}
         </div>
     </div>
